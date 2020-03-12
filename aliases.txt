@@ -1,0 +1,12 @@
+#####################################################
+##########              DOCKER         ##############
+#####################################################
+alias dcu="docker-compose up"
+alias dcub="docker-compose up --build"
+alias dcd="docker-compose down"
+alias dcdv="docker-compose down --volumes"
+alias dstopall='docker stop `docker ps -a -q`'
+alias drmall='docker rm `docker ps -a -q)`'
+alias dgenocide="dstopall && drmall"
+alias dce="docker-compose exec"
+alias dceme="docker-compose exec --user=1000"
